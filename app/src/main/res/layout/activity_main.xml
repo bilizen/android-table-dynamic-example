@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,14 +13,6 @@
     android:padding="16dp"
     tools:context="com.example.rodrigo.android_table_dynamic_example.MainActivity">
 
-<!--<FrameLayout>-->
-    <!--<ScrollView-->
-        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--android:scrollbars = "horizontal"-->
-        <!--android:fillViewport="true"-->
-        <!--android:orientation="vertical"-->
-        <!--android:layout_width="480dp"-->
-        <!--android:layout_height="wrap_content">-->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,15 +40,11 @@
                 android:text="Name"
                 android:gravity="center"
                 android:textColor="@android:color/white" />
-
-
         </TableRow>
     </TableLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/listDates"
-        android:layout_width="524dp"
+        android:layout_width="480dp"
         android:layout_height="match_parent"/>
-    <!--</ScrollView>-->
-    <!--</FrameLayout>-->
 </LinearLayout>
-
+</HorizontalScrollView>
